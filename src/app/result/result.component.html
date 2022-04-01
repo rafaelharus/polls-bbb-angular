@@ -1,0 +1,24 @@
+<div class="album py-2 bg-light">
+  <div class="container">
+    <div class="row g-0">
+      <div class="col-md-8">
+        <div class="card-body">
+          <p class="card-text"><small class="text-muted">Você votou em</small></p>
+          <h5 class="card-title">{{person.name | uppercase}}</h5>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img [src]="person.photo" class="img-fluid rounded-start">
+      </div>
+    </div>
+    <div class="row g-0">
+      <div class="col-md-12">
+        <h3>Parciais</h3>
+        Total de votos: {{dataDash['total']}}
+        <label *ngFor="let person of people" class="card peopleBox">
+          {{ person.name }} - {{dataDash[person.id]}}
+        </label>
+      </div>
+    </div>
+  </div>
+</div>

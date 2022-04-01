@@ -1,27 +1,24 @@
-# PollsBbbAngular
+Polls BBB Angular Example
+=================================================
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
+This project has a simple Angular code that consumes the REST API [Polls BBB API Node/MongoDB](https://github.com/rafaelharus/polls-bbb-api-node).
 
-## Development server
+## Running the project
+Option 1:
+```
+php -S 0.0.0.0:8081 -t dist/polls-bbb-angular/
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Option 2:
+```
+npm install
+```
+```
+npm run serve
+```
 
-## Code scaffolding
+## Live Demo
+You can check the app running on Heroku by clicking [here](https://polls-bbb-angular.herokuapp.com).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Questions and Suggestions?
+Drop me an [e-mail](mailto:rafael.harus@gmail.com)

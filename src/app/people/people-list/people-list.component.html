@@ -1,0 +1,34 @@
+<section class="py-2 text-center container">
+  <div class="row py-lg-0">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light">Paredão BBB: Vote para eliminar. Arthur Aguiar ou Linn da Quebrada?</h1>
+      <p class="lead text-muted">Exemplo de exibição dos dados da Polls BBB API Node.</p>
+    </div>
+  </div>
+</section>
+<div class="album py-2 bg-light">
+  <div class="container">
+    <form [formGroup]="pollForm">
+      <label *ngFor="let person of people" class="card peopleBox" appShowElement>
+        <input
+          type="radio"
+          [value]="person.id"
+          formControlName="personId"
+          class="hidden-radio"
+        >
+        <pb-person
+          [id]="person.id"
+          [name]="person.name"
+          [photo]="person.photo">
+          <div class="captcha">
+            <ng-hcaptcha
+              (verify)="onVerify($event)"
+              (expired)="onExpired($event)"
+              (error)="onError($event)">
+            </ng-hcaptcha>
+          </div>
+        </pb-person>
+      </label>
+    </form>
+  </div>
+</div>

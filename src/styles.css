@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+.peopleBox {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.rating-radio {
+  cursor: pointer;
+}
+.hidden-radio {
+  display: none;
+}
+.captcha {
+  display: none;
+}
+.showCaptcha .captcha {
+  display: block;
+}
